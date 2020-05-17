@@ -10,8 +10,6 @@ class ShipAttackHandler {
       let attackedShipId = shipAttackCmd[Variables.attackedId];
       let ship = a.ships[attackedShipId];
 
-      console.log(attackedShipId);
-
       if (attackerId === window.hero.id) {
         window.attackWindow.hp(shipAttackCmd[Variables.attackHp]);
         window.attackWindow.shd(shipAttackCmd[Variables.attackShd]);
