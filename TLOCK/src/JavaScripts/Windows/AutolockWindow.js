@@ -7,27 +7,29 @@ class AutolockWindow {
 
 		let options = [
 			{
-				name: 'lockPlayers',
-				type: 'checkbox',
-				labelText: 'Autolock Players (key: z)',
+				name: 'keyEnemy',
+				type: 'text',
+				labelText: 'enemy keys',
 				appendTo: this.autolockWindow,
 				attrs:{
-					checked: window.settings.lockPlayers
+					value: ""
 				},
-				event: function () {
-					window.settings.lockPlayers = this.checked;
+				eventType: 'keyup',
+				event: function (){
+					window.settings.enemyAutoLockKeys = this.value;
 				}
 			},
 			{
-				name: 'lockNpc',
-				type: 'checkbox',
-				labelText: 'Autolock NPCs (key: x)',
+				name: 'keyNpc',
+				type: 'text',
+				labelText: 'npc keys',
 				appendTo: this.autolockWindow,
 				attrs:{
-					checked: window.settings.lockNpc
+					value: ""
 				},
-				event: function () {
-				window.settings.lockNpc = this.checked;
+				eventType: 'keyup',
+				event: function (){
+					window.settings.npcAutoLockKeys = this.value;
 				}
 			},
 			{
@@ -41,7 +43,7 @@ class AutolockWindow {
 				event: function () {
 					window.settings.autoattack = this.checked;
 				}
-			}
+			},
 		];
 
 		options.forEach((option) => {

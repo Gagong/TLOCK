@@ -5,6 +5,9 @@ class Settings {
     this._lockPlayers = lockPlayers === true;
     this._lockNpc = lockNpc === true;
     this._autoattack = autoattack === true;
+
+    this._enemyAutoLockKeys = [];
+    this._npcAutoLockKeys = [];
   }
 
   set lockPlayers(v) {
@@ -29,6 +32,22 @@ class Settings {
 
   get autoattack() {
     return this._autoattack
+  }
+
+  set npcAutoLockKeys(v) {
+    this._npcAutoLockKeys = v.split("");
+  }
+
+  get npcAutoLockKeys() {
+    return this._npcAutoLockKeys;
+  }
+
+  set enemyAutoLockKeys(v) {
+    this._enemyAutoLockKeys = v.split("");
+  }
+
+  get enemyAutoLockKeys() {
+    return this._enemyAutoLockKeys;
   }
 
   setNpc(name, val) {

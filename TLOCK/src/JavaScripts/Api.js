@@ -19,34 +19,30 @@ class Api {
     }
 
     lockShip(ship) {
-        if (!(ship instanceof Ship))
-            return;
-
-        if (this.ships[ship.id] == null)
-            return;
-
-        ship.update();
         let pos = ship.position;
-        let scr = 'document.getElementById("preloader").lockShip(' + ship.id + ',' + Math.round(pos.x) + ',' + Math.round(pos.y) + ',' + Math.round(window.hero.position.x) + ',' + Math.round(window.hero.position.y) + ');';
+        let heroPos = window.hero.position;
+
+        let scr  = `document.getElementById("preloader").lockShip(${ship.id},${Math.round(pos.x)},${Math.round(pos.y)},
+                    ${Math.round(heroPos.x)},${Math.round(heroPos.y)});`;
+
         Injector.injectScript(scr);
-
-        this.lockTime = $.now();
     }
 
-    lockNpc(ship) {
-        if (!(ship instanceof Ship))
-            return;
-
-        if (this.ships[ship.id] == null)
-            return;
-
-        this.lockTime = $.now();
-
-        this.lockShip(ship);
-    }
+    // lockNpc(ship) {
+    //     if (!(ship instanceof Ship))
+    //         return;
+    //
+    //     if (this.ships[ship.id] == null)
+    //         return;
+    //
+    //     this.lockTime = $.now();
+    //
+    //     this.lockShip(ship);
+    // }
 
     startLaserAttack() {
         Injector.injectScript('document.getElementById("preloader").laserAttack()');
     }
+
 
 }

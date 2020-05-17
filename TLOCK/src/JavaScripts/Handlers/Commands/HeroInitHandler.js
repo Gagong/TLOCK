@@ -6,7 +6,7 @@ class HeroInitHandler {
   constructor(f) {
     this._handler = function (e, a) {
       e.detail = e.wholeMessage.split("|").slice(1).join("");
-      a.ships = [];
+      a.ships = {};
       a.boxes = {};
       a.gates = [];
       a.heroDied = false;
@@ -39,8 +39,10 @@ class HeroInitHandler {
 
       window.X1Map = window.hero.mapId === 1 || window.hero.mapId === 5 || window.hero.mapId === 9;
 
-      f();
-      window.initialized = true;
+      if (!window.initialized){
+        f();
+        window.initialized = true;
+      }
     }
   }
 

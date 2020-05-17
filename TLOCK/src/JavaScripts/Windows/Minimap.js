@@ -50,9 +50,9 @@ class Minimap {
       ship.update();
       let pos = ship.position;
 
-      if (ship.isNpc)
+      if (ship instanceof Npc)
         ct.fillStyle = "rgb(255, 0, 245)";
-      else if (ship.isEnemy) {
+      else if (ship instanceof Enemy) {
         ct.fillStyle = "rgb(255, 0, 0)";
         if (ship.cloaked)
           ct.fillText(ship.name + " | Cloaked", pos.x / window.b1 + 1, pos.y / window.b2 + 13);

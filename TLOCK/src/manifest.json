@@ -11,6 +11,7 @@
       "js": [
         "JavaScripts/Factories/ControlFactory.js",
         "JavaScripts/Factories/WindowFactory.js",
+        "JavaScripts/Factories/ShipTypeFactory.js",
 
         "JavaScripts/Handlers/HandlersManager.js",
         "JavaScripts/Handlers/Commands/AssetCreatedHandler.js",
@@ -36,6 +37,9 @@
         "JavaScripts/Objects/Gate.js",
         "JavaScripts/Objects/Hero.js",
         "JavaScripts/Objects/Ship.js",
+        "JavaScripts/Objects/Npc.js",
+        "JavaScripts/Objects/Enemy.js",
+        "JavaScripts/Objects/Ally.js",
         "JavaScripts/Objects/CBS/Battlestation.js",
         "JavaScripts/Objects/CBS/BattlestationModule.js",
 
@@ -50,6 +54,7 @@
         "JavaScripts/Utils/TimeHelper.js",
         "JavaScripts/Utils/Variables.js",
         "JavaScripts/Utils/WebClient.js",
+        "JavaScripts/Utils/Utils.js",
         "JavaScripts/Utils/Math/MathUtils.js",
         "JavaScripts/Utils/Math/Vector2D.js",
 

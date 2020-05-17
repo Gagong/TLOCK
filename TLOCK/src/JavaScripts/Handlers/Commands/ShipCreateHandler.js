@@ -8,16 +8,21 @@ class ShipCreateHandler {
       e.detail = e.wholeMessage.split("|").slice(1).join("");
 
       let shipCreateCmd = JSON.parse(e.detail);
-      a.ships[shipCreateCmd.userId] = new Ship(
-          shipCreateCmd.x,
-          shipCreateCmd.y,
-          shipCreateCmd.userId,
+
+      let params = {
+        'x': shipCreateCmd.x,
+        'y': shipCreateCmd.y,
+        'id': shipCreateCmd.userId,
+        'name': shipCreateCmd.userName,
+        'modifier': shipCreateCmd.modifier,
+        'cloaked': shipCreateCmd.cloaked,
+      };
+
+      a.ships[shipCreateCmd.userId] = ShipTypeFactory.createShipByType(
+          params,
           shipCreateCmd.npc,
-          shipCreateCmd.userName,
           shipCreateCmd.factionId,
-          shipCreateCmd.modifier,
-          shipCreateCmd[Variables.clanDiplomacy].type,
-          shipCreateCmd.cloaked
+          shipCreateCmd[Variables.clanDiplomacy].type
       );
     }
   }
