@@ -48,13 +48,12 @@ class Hero extends Movable {
   }
 
   setTargetShip(targetType) {
-    let maxDistance = 1000;
-    let ships = Object.values(window.api.ships);
-    let distanceToNearestShip = Math.min(...ships.map(ship =>
-        ship.distanceTo(this.position)));
+    const MAX_DISTANCE = 1000;
 
-    this.targetShip = ships.filter(ship =>
-        ship.distanceTo(this.position) < maxDistance && ship instanceof targetType)
-        .find(ship => ship.distanceTo(this.position) === distanceToNearestShip);
+    this.targetShip = Object.values(window.api.ships).filter(ship =>
+        ship.distanceTo(this.position) < MAX_DISTANCE && ship instanceof targetType
+        ).sort((currentShip, nextShip) =>
+            currentShip.distanceTo(this.position) - nextShip.distanceTo(this.position)
+        )[0];
   }
 }
