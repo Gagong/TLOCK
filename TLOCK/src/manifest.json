@@ -13,7 +13,20 @@
         "JavaScripts/Factories/WindowFactory.js",
         "JavaScripts/Factories/ShipTypeFactory.js",
 
+        "JavaScripts/FightPresets/BaseFightPreset.js",
+        "JavaScripts/FightPresets/DefaultFightPreset.js",
+        "JavaScripts/FightPresets/MixerFightPreset.js",
+        "JavaScripts/FightPresets/FightPresetsManager.js",
+
+        "JavaScripts/KeyboardActions/BaseAction.js",
+        "JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js",
+        "JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js",
+        "JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js",
+
+        "JavaScripts/Handlers/SlotsManager.js",
+
         "JavaScripts/Handlers/HandlersManager.js",
+        "JavaScripts/Handlers/KeyEventsManager.js",
         "JavaScripts/Handlers/Commands/AssetCreatedHandler.js",
         "JavaScripts/Handlers/Commands/GateInitHandler.js",
         "JavaScripts/Handlers/Commands/HeroDiedHandler.js",
@@ -26,6 +39,8 @@
         "JavaScripts/Handlers/Commands/ShipRemovedHandler.js",
         "JavaScripts/Handlers/Commands/ShipSelectedHandler.js",
         "JavaScripts/Handlers/Events/HeroPositionUpdateEventHandler.js",
+        "JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js",
+        "JavaScripts/Handlers/Events/KeyDownEventHandler.js",
 
 
         "JavaScripts/Libraries/jquery-3.2.1.min.js",
@@ -42,6 +57,9 @@
         "JavaScripts/Objects/Ally.js",
         "JavaScripts/Objects/CBS/Battlestation.js",
         "JavaScripts/Objects/CBS/BattlestationModule.js",
+        "JavaScripts/Objects/Slot/Slot.js",
+        "JavaScripts/Objects/Slot/PrimarySlot.js",
+        "JavaScripts/Objects/Slot/SecondarySlot.js",
 
         "JavaScripts/Settings/GlobalSettings.js",
         "JavaScripts/Settings/Settings.js",

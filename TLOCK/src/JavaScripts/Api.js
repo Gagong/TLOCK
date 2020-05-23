@@ -40,6 +40,13 @@ class Api {
     //     this.lockShip(ship);
     // }
 
+    pressKey(keyCode){
+
+        console.log(`key pressed ${keyCode}`);
+        let scr  = `document.getElementById("preloader").pressKey(${48 + keyCode});`;
+        Injector.injectScript(scr);
+    }
+
     startLaserAttack() {
         Injector.injectScript('document.getElementById("preloader").laserAttack()');
     }

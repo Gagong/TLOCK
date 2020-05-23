@@ -15,8 +15,8 @@ class AutolockWindow {
 					value: ""
 				},
 				eventType: 'keyup',
-				event: function (){
-					window.settings.enemyAutoLockKeys = this.value;
+				event: function (ev){
+					window.keyManager.updateAction(EnemyAutoLockAction.NAME, ev.code);
 				}
 			},
 			{
@@ -28,8 +28,8 @@ class AutolockWindow {
 					value: ""
 				},
 				eventType: 'keyup',
-				event: function (){
-					window.settings.npcAutoLockKeys = this.value;
+				event: function (ev){
+					window.keyManager.updateAction(NpcAutoLockAction.NAME, ev.code);
 				}
 			},
 			{

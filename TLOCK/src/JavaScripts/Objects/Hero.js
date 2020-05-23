@@ -5,6 +5,7 @@ class Hero extends Movable {
     this.targetShip = null;
     this.id = id;
     this.mapId = mapId;
+    this._fightPreset = null;
   }
 
   lockAndAttack(targetType){
@@ -13,23 +14,23 @@ class Hero extends Movable {
   }
 
   attack(){
-    if (this.targetShip){
-      this.handleAttack(this.targetShip);
-    }
+    window.fightPresetsManager.fightPreset.attack();
+
+    // if (this.targetShip){
+    //   this.handleAttack(this.targetShip);
+    // }
   }
 
-  handleAttack(shipToAttack){
-    let handler = () => {
-      if (window.api.lockedShip === shipToAttack) {
-        window.api.lastAttack = $.now();
-        window.api.attacking = true;
-        console.log('locked');
-        window.api.startLaserAttack();
-      }
-    };
-
-    setIntervalLimited(handler, 150, 2);
-  }
+  // handleAttack(shipToAttack){
+  //   setIntervalLimited(() => {
+  //     if (window.api.lockedShip === shipToAttack) {
+  //       window.api.lastAttack = $.now();
+  //       window.api.attacking = true;
+  //       console.log('locked');
+  //       window.api.startLaserAttack();
+  //     }
+  //   }, 150, 2);
+  // }
 
   lock(targetType){
     this.setTargetShip(targetType);
@@ -55,5 +56,15 @@ class Hero extends Movable {
         ).sort((currentShip, nextShip) =>
             currentShip.distanceTo(this.position) - nextShip.distanceTo(this.position)
         )[0];
+
+    console.log(this.targetShip);
+  }
+
+  set fightPreset(preset){
+    this._fightPreset = preset;
+  }
+
+  get fightPreset(){
+    return this._fightPreset;
   }
 }

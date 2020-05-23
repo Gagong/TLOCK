@@ -13,6 +13,9 @@ $(document).ready(function () {
     window.debug = false;
     window.tickTime = window.GlobalSettings.timerTick;
 
+    window.fightPresetsManager = new FightPresetsManager(new MixerFightPreset());
+    window.slotsManager = new SlotsManager();
+
     let hm = new HandlersManager(api);
     hm.registerCommand(AssetCreatedHandler.ID, new AssetCreatedHandler());
     hm.registerCommand(GateInitHandler.ID, new GateInitHandler());
@@ -26,29 +29,20 @@ $(document).ready(function () {
     hm.registerCommand(ShipRemovedHandler.ID, new ShipRemovedHandler());
     hm.registerCommand(ShipSelectedHandler.ID, new ShipSelectedHandler());
     hm.registerEvent("updateHeroPos", new HeroPositionUpdateEventHandler());
+    hm.registerEvent("ammoUpdate", new AmmoUpdateEventHandler());
     hm.listen();
+
+    window.keyManager = new KeyEventsManager();
+    window.keyManager.registerAction(EnemyAutoLockAction.NAME, new EnemyAutoLockAction());
+    window.keyManager.registerAction(NpcAutoLockAction.NAME, new NpcAutoLockAction());
+
+    hm.registerEvent("keydown", new KeyDownEventHandler());
 });
 
 function init() {
     Injector.injectScriptFromResource("JavaScripts/Injectables/HeroPositionUpdater.js");
     createUI();
     window.setInterval(logic, window.tickTime);
-
-    $(document).keydown(function (e) {
-        let key = e.key;
-        handleKeyDown(key);
-    });
-}
-
-function handleKeyDown(key){
-    let targetType = window.settings.enemyAutoLockKeys.includes(key) ? Enemy
-                    : window.settings.npcAutoLockKeys.includes(key) ? Npc
-                    : null;
-
-    if (targetType){
-        window.settings.autoattack ? window.hero.lockAndAttack(targetType)
-            : window.hero.lock(targetType);
-    }
 }
 
 function logic() {
