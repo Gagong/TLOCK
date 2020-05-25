@@ -5,6 +5,7 @@ class AutolockWindow {
 			text: "Autolocker"
 		});
 
+
 		let options = [
 			{
 				name: 'keyEnemy',

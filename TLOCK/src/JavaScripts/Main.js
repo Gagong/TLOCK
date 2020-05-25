@@ -58,4 +58,3 @@ function createUI(){
     window.autolockWindow = new AutolockWindow();
     window.autolockWindow.createWindow();
 }
-
