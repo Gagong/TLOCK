@@ -27,13 +27,19 @@ $(document).ready(function () {
     hm.registerCommand(ShipMoveHandler.ID, new ShipMoveHandler());
     hm.registerCommand(ShipRemovedHandler.ID, new ShipRemovedHandler());
     hm.registerCommand(ShipSelectedHandler.ID, new ShipSelectedHandler());
+    hm.registerCommand(PetActivatedHandler.ID, new PetActivatedHandler());
+    hm.registerCommand(PetDestroyedHandler.ID, new PetDestroyedHandler());
+
     hm.registerEvent("updateHeroPos", new HeroPositionUpdateEventHandler());
     hm.registerEvent("ammoUpdate", new AmmoUpdateEventHandler());
+    hm.registerEvent("petGearUpdate", new PetGearUpdatedEventHandler());
     hm.listen();
 
     window.keyManager = new KeyEventsManager();
     window.keyManager.registerAction(EnemyAutoLockAction.NAME, new EnemyAutoLockAction());
     window.keyManager.registerAction(NpcAutoLockAction.NAME, new NpcAutoLockAction());
+    window.keyManager.registerAction(GuardPetAction.NAME, new GuardPetAction());
+    window.keyManager.registerAction(KamikazePetAction.NAME, new KamikazePetAction());
 
     hm.registerEvent("keydown", new KeyDownEventHandler());
 });

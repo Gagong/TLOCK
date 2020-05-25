@@ -6,6 +6,7 @@ class Hero extends Movable {
     this.id = id;
     this.mapId = mapId;
     this._fightPreset = null;
+    this._pet = new Pet();
 
     this.lastAttackTime = 0;
     this.lastAttackedTime = 0;
@@ -52,6 +53,14 @@ class Hero extends Movable {
         ).sort((currentShip, nextShip) =>
             currentShip.distanceTo(this.position) - nextShip.distanceTo(this.position)
         )[0];
+  }
+
+  // set pet(pet){
+  //   this._pet = pet;
+  // }
+
+  get pet(){
+    return this._pet;
   }
 
   set fightPreset(preset){

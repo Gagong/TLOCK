@@ -14,7 +14,7 @@ class MixerFightPreset extends BaseFightPreset{
         // console.log(keyToPress);
         if (keyToPress && $.now() - this.lastPressKey > 30) {
             this.lastPressKey = $.now();
-            console.log(this.lastPressKey);
+            //console.log(this.lastPressKey);
             window.api.pressKey(keyToPress)
         }
     }

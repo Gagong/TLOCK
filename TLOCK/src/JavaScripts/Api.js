@@ -35,6 +35,17 @@ class Api {
         Injector.injectScript(scr);
     }
 
+    usePet(actionId){
+        let scr  = `document.getElementById("preloader").usePet(${actionId});`;
+        Injector.injectScript(scr);
+    }
+
+    usePetModule(moduleId){
+        let scr  = `document.getElementById("preloader").usePetModule(${moduleId});`;
+        Injector.injectScript(scr);
+    }
+
+
     startLaserAttack() {
         Injector.injectScript('document.getElementById("preloader").laserAttack()');
     }

@@ -1,6 +1,6 @@
 class EnemyAutoLockAction extends BaseAutoLockAction {
     static get NAME(){
-        return "EnemyAutoLock"
+        return "EnemyAutoLock";
     }
 
     constructor() {

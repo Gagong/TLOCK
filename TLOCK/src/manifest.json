@@ -22,6 +22,9 @@
         "JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js",
         "JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js",
         "JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js",
+        "JavaScripts/KeyboardActions/Pet/BasePetAction.js",
+        "JavaScripts/KeyboardActions/Pet/GuardPetAction.js",
+        "JavaScripts/KeyboardActions/Pet/KamikazePetAction.js",
 
         "JavaScripts/Handlers/SlotsManager.js",
 
@@ -31,6 +34,8 @@
         "JavaScripts/Handlers/Commands/GateInitHandler.js",
         "JavaScripts/Handlers/Commands/HeroDiedHandler.js",
         "JavaScripts/Handlers/Commands/HeroInitHandler.js",
+        "JavaScripts/Handlers/Commands/PetActivatedHandler.js",
+        "JavaScripts/Handlers/Commands/PetDestroyedHandler.js",
         "JavaScripts/Handlers/Commands/HeroUpdateHitpointsHandler.js",
         "JavaScripts/Handlers/Commands/ShipAttackHandler.js",
         "JavaScripts/Handlers/Commands/ShipCreateHandler.js",
@@ -41,6 +46,7 @@
         "JavaScripts/Handlers/Events/HeroPositionUpdateEventHandler.js",
         "JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js",
         "JavaScripts/Handlers/Events/KeyDownEventHandler.js",
+        "JavaScripts/Handlers/Events/PetGearUpdatedEventHandler.js",
 
 
         "JavaScripts/Libraries/jquery-3.2.1.min.js",
@@ -55,6 +61,9 @@
         "JavaScripts/Objects/Npc.js",
         "JavaScripts/Objects/Enemy.js",
         "JavaScripts/Objects/Ally.js",
+        "JavaScripts/Objects/Observable.js",
+        "JavaScripts/Objects/Observer.js",
+        "JavaScripts/Objects/Pet.js",
         "JavaScripts/Objects/CBS/Battlestation.js",
         "JavaScripts/Objects/CBS/BattlestationModule.js",
         "JavaScripts/Objects/Slot/Slot.js",
@@ -73,6 +82,7 @@
         "JavaScripts/Utils/Variables.js",
         "JavaScripts/Utils/WebClient.js",
         "JavaScripts/Utils/Utils.js",
+        "JavaScripts/Utils/PetActions.js",
         "JavaScripts/Utils/Math/MathUtils.js",
         "JavaScripts/Utils/Math/Vector2D.js",
 

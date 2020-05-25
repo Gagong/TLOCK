@@ -40,6 +40,38 @@ class AutolockWindow {
 				}
 			},
 			{
+				name: 'keyKamikaze',
+				type: 'text',
+				span: true,
+				labelBefore: true,
+				labelText: 'Kamikaze key: ',
+				appendTo: this.autolockWindow,
+				attrs:{
+					value: "",
+					maxlength: "1",
+				},
+				eventType: 'keyup',
+				event: function (){
+					window.keyManager.updateAction(KamikazePetAction.NAME, this.value);
+				}
+			},
+			{
+				name: 'keyGuard',
+				type: 'text',
+				span: true,
+				labelBefore: true,
+				labelText: 'Guard key: ',
+				appendTo: this.autolockWindow,
+				attrs:{
+					value: "",
+					maxlength: "1",
+				},
+				eventType: 'keyup',
+				event: function (){
+					window.keyManager.updateAction(GuardPetAction.NAME, this.value);
+				}
+			},
+			{
 				name: 'laserSlots',
 				type: 'text',
 				span: true,

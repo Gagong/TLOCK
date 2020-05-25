@@ -2,12 +2,9 @@ class Ship extends Movable {
   constructor(params) {
     super(params['x'], params['y']);
     this.id = params['id'];
-    //this.isNpc = isn;
     this.name = params['name'];
-    //this.factionId = factionId;
     this.isAttacked = false;
     this.modifier = params['modifier'];
-   // this.clanDiplomacy = clanDiplomacy;
     this.cloaked = params['cloaked'];
   }
 
@@ -16,10 +13,6 @@ class Ship extends Movable {
     this.timeToTarget = parseInt(time);
     this.lastUpdate = $.now();
   }
-
-  // get isEnemy() {
-  //   return (window.hero.factionId !== this.factionId && this.clanDiplomacy !== 1 && this.clanDiplomacy !== 2 || this.clanDiplomacy === 3);
-  // }
 
   get percentOfHp() {
     return (this.hp && this.maxHp) ? MathUtils.percentFrom(this.hp, this.maxHp) : 100;

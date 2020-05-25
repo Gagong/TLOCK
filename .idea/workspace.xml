@@ -2,26 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46c0e114-0127-404f-bd6f-8491d28bea6e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/DefaultFightPreset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/FightPresetsManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyDownEventHandler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/SlotsManager.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/PrimarySlot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/SecondarySlot.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/Slot.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins/AutoPetUsageMixin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetActivatedHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetDestroyedHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/PetGearUpdatedEventHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/BasePetAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/GuardPetAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/KamikazePetAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Pet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/PetActions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Ship.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Ship.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Variables.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AutolockWindow.js" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AutolockWindow.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/src/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/src/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TLOCK/swf/main.swf" beforeDir="false" afterPath="$PROJECT_DIR$/TLOCK/swf/main.swf" afterDir="false" />
@@ -38,10 +40,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/PetGearUpdatedEventHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+            <state relative-caret-position="68">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -49,62 +60,31 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="391">
+              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AttackWindow.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AutolockWindow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="612">
+              <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/ControlFactory.js">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+            <state relative-caret-position="136">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -112,17 +92,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyDownEventHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="272">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins/AutoPetUsageMixin.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipAttackHandler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -150,33 +148,50 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/TLOCK/client/mitmtest.py" />
-        <option value="$PROJECT_DIR$/TLOCK/client/main.py" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/HeroPositionUpdateEventHandler.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyUpEventHandler.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/NpcAutoLockAction.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/EnemyAutoLockAction.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAutoLockAction.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAction.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/DefaultFightPreset.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/PrimarySlot.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/SecondarySlot.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/FightPresetsManager.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/manifest.json" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/Slot.js" />
-        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/SlotsManager.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyDownEventHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/FightPresetsManager.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/CSS/style.css" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/Slot.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipAttackHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/SlotsManager.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/KamikazePetAction.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/GuardPetAction.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observable.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observer.js" />
+        <option value="$PROJECT_DIR$/TLOCK/client/main.py" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Variables.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetCreatedHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetActivatedHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetDestroyedHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins/AutoPetUsageMixin.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Ship.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/PetActions.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/BasePetAction.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/manifest.json" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/PetGearUpdatedEventHandler.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js" />
+        <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Pet.js" />
         <option value="$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AutolockWindow.js" />
       </list>
     </option>
@@ -191,7 +206,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -262,6 +277,15 @@
               <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaScripts" type="462c0819:PsiDirectoryNode" />
+              <item name="FightPresets" type="462c0819:PsiDirectoryNode" />
+              <item name="Mixins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TLOCK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScripts" type="462c0819:PsiDirectoryNode" />
               <item name="Handlers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -313,6 +337,15 @@
               <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaScripts" type="462c0819:PsiDirectoryNode" />
+              <item name="KeyboardActions" type="462c0819:PsiDirectoryNode" />
+              <item name="Pet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TLOCK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScripts" type="462c0819:PsiDirectoryNode" />
               <item name="Objects" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,6 +380,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="JavaScripts" type="462c0819:PsiDirectoryNode" />
               <item name="Windows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TLOCK" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="TLOCK" type="462c0819:PsiDirectoryNode" />
+              <item name="swf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TLOCK" type="b2602c69:ProjectViewProjectNode" />
@@ -445,7 +484,8 @@
       <workItem from="1589633911695" duration="11839000" />
       <workItem from="1589739338001" duration="4030000" />
       <workItem from="1589746510662" duration="325000" />
-      <workItem from="1589747035283" duration="88255000" />
+      <workItem from="1589747035283" duration="134460000" />
+      <workItem from="1590428535100" duration="21061000" />
     </task>
     <task id="LOCAL-00001" summary="Added more instances, improved autolock, refactored">
       <created>1589739462719</created>
@@ -461,11 +501,25 @@
       <option name="project" value="LOCAL" />
       <updated>1589748724911</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added fight presets, autolock refactored">
+      <created>1590252681007</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590252681007</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Mixer added (slots on default slotbar required, hotkey binds from 1 to 10 also required). For lasers and rockets first slot is primary, other slots are single paired and will be used by cd">
+      <created>1590366786563</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1590366786563</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92610000" />
+    <option name="totallyTimeSpent" value="159876000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -480,12 +534,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.16950959" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4994401" visible="true" weight="0.17110874" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005599" side_tool="true" weight="0.16950959" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28169015" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -494,7 +548,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33152762" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -502,29 +556,6 @@
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16950959" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.032502707" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -532,7 +563,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added more instances, improved autolock, refactored" />
     <MESSAGE value="Fix: not autolocking in case if ally is closest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix: not autolocking in case if ally is closest" />
+    <MESSAGE value="Added fight presets, autolock refactored" />
+    <MESSAGE value="Mixer added (slots on default slotbar required, hotkey binds from 1 to 10 also required). For lasers and rockets first slot is primary, other slots are single paired and will be used by cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mixer added (slots on default slotbar required, hotkey binds from 1 to 10 also required). For lasers and rockets first slot is primary, other slots are single paired and will be used by cd" />
   </component>
   <component name="WindowStateProjectService">
     <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1589645967010">
@@ -542,281 +575,54 @@
     <state x="2587" y="128" width="585" height="801" key="find.popup/0.0.1920.1040/1920.9.1920.1040@1920.9.1920.1040" timestamp="1589640113105" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/TLOCK$main.coverage" NAME="main Coverage Results" MODIFIED="1590250253234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TLOCK/client" />
+    <SUITE FILE_PATH="coverage/TLOCK$main.coverage" NAME="main Coverage Results" MODIFIED="1590449687821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TLOCK/client" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/CSS/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2907">
-          <caret line="171" column="16" selection-start-line="171" selection-start-column="16" selection-end-line="171" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/client/mitmtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/client/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/AssetCreatedHandler.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/GateInitHandler.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Variables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Injector.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/ResourcesManager.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipRemovedHandler.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/ShipTypeFactory.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AttackWindow.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Settings/GlobalSettings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-347" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipMoveHandler.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipCreateHandler.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipDestroyedHandler.js">
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/HeroDiedHandler.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/HeroUpdateHitpointsHandler.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Injectables/HeroPositionUpdater.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/NpcAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/EnemyAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/HeroInitHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="60" lean-forward="true" selection-start-line="21" selection-start-column="60" selection-end-line="21" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/PrimarySlot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Movable.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Npc.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/SecondarySlot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Gate.js">
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipSelectedHandler.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/FightPresetsManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        <state relative-caret-position="102">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/CSS/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="178" selection-start-line="178" selection-end-line="178" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/SlotsManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="79" column="10" selection-start-line="79" selection-start-column="10" selection-end-line="79" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/HeroPositionUpdateEventHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <caret line="12" column="1" lean-forward="true" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/DefaultFightPreset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Enemy.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipAttackHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="19" column="74" selection-start-line="19" selection-start-column="74" selection-end-line="19" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="33" column="32" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Slot/Slot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/WindowFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/SlotsManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/ControlFactory.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyDownEventHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Npc.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/BaseAction.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -825,10 +631,258 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/BaseAutoLockAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/HeroInitHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="62" lean-forward="true" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/ControlFactory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="56" column="7" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/ShipTypeFactory.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Factories/WindowFactory.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/client/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="49" column="44" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/Variables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="78" column="17" selection-start-line="78" selection-start-column="17" selection-end-line="78" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipCreateHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipDestroyedHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipMoveHandler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipRemovedHandler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/EnemyAutoLockAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/AutoLock/NpcAutoLockAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/GuardPetAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Movable.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Hero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="59" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="9" lean-forward="true" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Observer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Ship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Utils/PetActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetDestroyedHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/BasePetAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/PetActivatedHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/HandlersManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="9" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="48" column="63" selection-start-line="48" selection-start-column="63" selection-end-line="48" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Objects/Pet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/KeyboardActions/Pet/KamikazePetAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Commands/ShipAttackHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="66" selection-start-line="13" selection-start-column="66" selection-end-line="13" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/KeyDownEventHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/AmmoUpdateEventHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/BaseFightPreset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AttackWindow.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/Events/PetGearUpdatedEventHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Windows/AutolockWindow.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="612">
+          <caret line="123" column="14" selection-start-line="123" selection-start-column="14" selection-end-line="123" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/Handlers/KeyEventsManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/MixerFightPreset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TLOCK/src/JavaScripts/FightPresets/Mixins/AutoPetUsageMixin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
         </state>
       </provider>
     </entry>

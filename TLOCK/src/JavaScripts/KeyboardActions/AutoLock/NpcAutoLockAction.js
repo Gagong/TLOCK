@@ -1,6 +1,6 @@
 class NpcAutoLockAction extends BaseAutoLockAction{
     static get NAME(){
-        return "NpcAutoLock"
+        return "NpcAutoLock";
     }
 
     constructor(){

@@ -70,4 +70,12 @@ class Variables {
   static get gateType() {//
     return "_-Nk";
   }
+
+  static get petId() {//
+    return "_-w4d";
+  }
+
+  static get petMasterId() {//
+    return "_-o41";
+  }
 }
