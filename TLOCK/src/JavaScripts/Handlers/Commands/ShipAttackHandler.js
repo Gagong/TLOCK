@@ -14,11 +14,14 @@ class ShipAttackHandler {
         window.attackWindow.hp(shipAttackCmd[Variables.attackHp]);
         window.attackWindow.shd(shipAttackCmd[Variables.attackShd]);
         window.attackWindow.targetName(ship.name);
+        window.hero.lastAttackTime = $.now();
+        a.targetShip = ship;
       }
 
       if (attackedShipId === window.hero.id) {
         window.hero.hp = shipAttackCmd[Variables.attackHp];
         window.hero.shd = shipAttackCmd[Variables.attackShd];
+        window.hero.lastAttackedTime = $.now();
       }
 
       // if (window.hero.targetShip && attackedShipId === window.hero.targetShip.id)
@@ -29,7 +32,7 @@ class ShipAttackHandler {
       if (ship) {
         ship.hp = shipAttackCmd[Variables.attackHp];
         ship.shd = shipAttackCmd[Variables.attackShd];
-        ship.isAttacked = attackerId !== window.hero.id;
+        //ship.isAttacked = attackerId !== window.hero.id;
       }
     }
   }

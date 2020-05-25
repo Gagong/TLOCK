@@ -14,7 +14,6 @@ $(document).ready(function () {
     window.tickTime = window.GlobalSettings.timerTick;
 
     window.fightPresetsManager = new FightPresetsManager(new MixerFightPreset());
-    window.slotsManager = new SlotsManager();
 
     let hm = new HandlersManager(api);
     hm.registerCommand(AssetCreatedHandler.ID, new AssetCreatedHandler());

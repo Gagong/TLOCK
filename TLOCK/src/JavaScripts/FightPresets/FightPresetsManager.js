@@ -3,8 +3,8 @@ class FightPresetsManager {
         this._fightPreset = fightPreset;
     }
 
-    updateFightPreset(slotId, item){
-        this.fightPreset.handleSlotUpdate(slotId, item);
+    handleAmmunitionUpdate(slotId, item){
+        this.fightPreset.slotsManager.handleSlotUpdate(slotId, item);
     }
 
     get fightPreset() {

@@ -6,6 +6,9 @@ class Hero extends Movable {
     this.id = id;
     this.mapId = mapId;
     this._fightPreset = null;
+
+    this.lastAttackTime = 0;
+    this.lastAttackedTime = 0;
   }
 
   lockAndAttack(targetType){
@@ -15,22 +18,15 @@ class Hero extends Movable {
 
   attack(){
     window.fightPresetsManager.fightPreset.attack();
-
-    // if (this.targetShip){
-    //   this.handleAttack(this.targetShip);
-    // }
   }
 
-  // handleAttack(shipToAttack){
-  //   setIntervalLimited(() => {
-  //     if (window.api.lockedShip === shipToAttack) {
-  //       window.api.lastAttack = $.now();
-  //       window.api.attacking = true;
-  //       console.log('locked');
-  //       window.api.startLaserAttack();
-  //     }
-  //   }, 150, 2);
-  // }
+  get isAttacking(){
+    return $.now() - this.lastAttackTime < 5100;
+  }
+
+  get isUnderAttack(){
+    return $.now() - this.lastAttackedTime < 5100;
+  }
 
   lock(targetType){
     this.setTargetShip(targetType);
@@ -56,8 +52,6 @@ class Hero extends Movable {
         ).sort((currentShip, nextShip) =>
             currentShip.distanceTo(this.position) - nextShip.distanceTo(this.position)
         )[0];
-
-    console.log(this.targetShip);
   }
 
   set fightPreset(preset){

@@ -3,12 +3,11 @@ class Slot{
         this._activatable = true;
         this.selected = false;
         this.id = id;
-        this._secondarySlot = null;
+        this.hasTimer = true;
         this._primarySlot = null;
+        this._secondarySlot = null;
 
-        this.lastTimeSelected = null;
-
-        this.switchTargetSlot = null;
+        this.lastTimeSelected = 0;
     }
 
     get activatable(){
@@ -16,24 +15,16 @@ class Slot{
     }
 
     set activatable(selectedStatus){
-        if (!this.primarySlot && this.activatable != selectedStatus && ($.now() - this.lastTimeSelected) < 100){ //hack, sometimes slots after being activated dont change activatable state
-            return;
-        }
-        this.lastTimeSelected = $.now();
         this._activatable = selectedStatus;
-    }
-
-    get isSecondary(){
-        return this.primarySlot && !this.secondarySlot;
-    }
-
-    get secondarySlot(){
-        return this._secondarySlot;
     }
 
     set secondarySlot(slot){
         this._secondarySlot = slot;
         slot.primarySlot = this;
+    }
+
+    get secondarySlot(){
+        return this._secondarySlot;
     }
 
     set primarySlot(slot){

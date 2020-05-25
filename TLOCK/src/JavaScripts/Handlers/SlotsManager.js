@@ -1,7 +1,7 @@
 class SlotsManager{
     constructor(){
         this.initSlots();
-        this.countdownableSlots = [2, 3]; //from settings
+        this._unpairedTimerSlots = []; //from settings
     }
 
     initSlots(){
@@ -10,60 +10,87 @@ class SlotsManager{
         for (let i = 1; i <= 10; i++){
             this.slots.push(new Slot(i));
         }
-        this.slots[0].secondarySlot = this.slots[1];//from settings
+    }
+
+   handleSlotUpdate(slotId, state){
+        let slot = this.getSlotById(slotId);
+        //let slotStateChanged = slot ? this.isSlotStateChanged(slot, state) : false;
+
+        if (slot) {
+            this.updateSlot(slot, state);
+
+            if (window.fightPresetsManager.fightPreset.attackAvailability) {
+                this.handleAttack();
+            }
+        }
     }
 
     getSlotById(slotId){
-        return this.slots[slotId - 1];
-    }
-
-    // TODO: refactor
-    switchSlot(slot) {
-        let id = null;
-
-        if (slot.primarySlot){
-            if (slot.activatable && !slot.selected){
-                id = slot.id;
-            }
-            else if (!slot.activatable && slot.selected){
-                id = slot.primarySlot.id;
-            }
-        }
-        else if (!slot.secondarySlot){
-            if (slot.activatable){
-                id = slot.id;
-            }
-        }
-
-        if (id) {
-            slot.activatable = false;
-            window.api.pressKey(id);
-        }
-    }
-
-    update(){
-        this.slots.filter( slot =>
-            this.countdownableSlots.includes(slot.id)
-        )
-        .forEach(slot =>
-            this.switchSlot(slot)
+        return this.slots.find(
+            slot => slot.id == slotId
         );
     }
 
-    handleSlotUpdate(slotId, item){
-        let slot = this.getSlotById(slotId);
+    handleAttack(){
+        this.slots.filter(slot =>
+            this.allTimerSlots.includes(slot.id) && slot.hasTimer
+        )
+        .forEach(slot =>
+            this.handleSwitching(slot)
+        );
+    }
 
-        slot.activatable = item['activatable'];
-        slot.selected = item['selected'];
+    handleSwitching(slot){
+        let slotToSelect = !slot.secondarySlot && slot.activatable ? slot
+            : slot.primarySlot && !slot.activatable && slot.selected ? slot.primarySlot
+            : null;
 
-        if ( window.hero.targetShip) {
-            this.update();
+        if (slotToSelect){
+            this.handleSlotSelection(slotToSelect);
         }
     }
 
-     // getSlotIdToSwitch(slot){
-    //     return slot.isSecondary && slot.activatable && !slot.selected ? slot.id
-    //         : slot.isSecondary && !slot.activatable && slot.selected ? slot.primarySlot.id
-    //         : null;
+    handleSlotSelection(slot){
+        if ($.now() - slot.lastTimeSelected > 200){
+            window.api.pressKey(slot.id);
+            slot.lastTimeSelected = $.now();
+        }
+    }
+
+    get allTimerSlots(){
+        return this._unpairedTimerSlots
+            .concat(
+                this.slots.filter(
+                    slot => slot.primarySlot != null
+                )
+                .map(
+                    slot => slot.id
+                )
+            )
+    }
+
+    updateUnpairedTimerSlots(ids){
+        this._unpairedTimerSlots = ids;
+    }
+
+    updateSlotDependencies(primaryId, secondaryId){
+        let primarySlot = this.getSlotById(primaryId);
+        let secondarySlot = this.getSlotById(secondaryId);
+
+        //console.log(`${primarySlot}, ${secondarySlot}`);
+
+        if (primarySlot && secondarySlot){
+            primarySlot.secondarySlot = secondarySlot;
+        }
+    }
+
+   updateSlot(slot, state){
+        slot.hasTimer = state.hasTimer;
+        slot.activatable = state.activatable;
+        slot.selected = state.selected;
+    }
+
+    // isSlotStateChanged(slot, state){
+    //     return slot.activatable != state.activatable || slot.selected != state.selected;
     // }
 }

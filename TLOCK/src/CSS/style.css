@@ -175,3 +175,8 @@
   background: #15242d;
   cursor: pointer;
 }
+
+input[type=text] {
+    width: 40px;
+    text-align: center;
+}

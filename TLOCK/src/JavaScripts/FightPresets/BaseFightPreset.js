@@ -1,6 +1,7 @@
 class BaseFightPreset{
     constructor(){
         this.fightMixins = [];
+        this._slotsManger = new SlotsManager();
     }
 
     attack(){
@@ -9,14 +10,26 @@ class BaseFightPreset{
 
     handleAttackStart(){
         setIntervalLimited(() => {
-            if (window.api.lockedShip === window.hero.targetShip) {
+            if (this.startAttackAvailability) {
                 window.api.startLaserAttack();
+                this.slotsManager.handleAttack();
             }
         }, 150, 2);
     }
 
-    handleAmmo(){
-        ;
+    get startAttackAvailability() {
+        return window.hero.targetShip && window.hero.targetShip == window.api.lockedShip;
+    }
+
+    get attackAvailability(){
+        // console.log(window.api.targetShip);
+        // console.log(window.)
+        return window.api.targetShip && window.hero.isAttacking
+            && window.api.targetShip == window.api.lockedShip;
+    }
+
+    get slotsManager(){
+        return this._slotsManger;
     }
 
 

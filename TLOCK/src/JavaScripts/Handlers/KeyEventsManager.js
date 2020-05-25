@@ -10,10 +10,10 @@ class KeyEventsManager{
     }
 
     getActionByKey(key){
-        console.log(key);
+        console.log(key.key);
         return Object.values(this.actions).find((action) =>
-            //action.keys.includes(key)
-            action.keys == key.code
+            action.keys.includes(key.key)
+            //action.keys == key.code
         )
     }
 

@@ -28,21 +28,9 @@ class Api {
         Injector.injectScript(scr);
     }
 
-    // lockNpc(ship) {
-    //     if (!(ship instanceof Ship))
-    //         return;
-    //
-    //     if (this.ships[ship.id] == null)
-    //         return;
-    //
-    //     this.lockTime = $.now();
-    //
-    //     this.lockShip(ship);
-    // }
-
     pressKey(keyCode){
 
-        console.log(`key pressed ${keyCode}`);
+       // console.log(`key pressed ${keyCode}`);
         let scr  = `document.getElementById("preloader").pressKey(${48 + keyCode});`;
         Injector.injectScript(scr);
     }
